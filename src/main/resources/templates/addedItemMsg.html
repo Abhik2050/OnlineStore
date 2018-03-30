@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>OPUS MOBILE</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/OM.css}" />
+
+<script type="text/javascript" src="/js/redirect.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="headerBarblock padding10">
+			Product Inventory
+			<div class="floatRight closeX"></div>
+		</div>
+		<!-- Below class to show LEFT and Right border -->
+		<div class="popupcontentBlock" style="background-color: white">
+			<div class="container1">
+				<div class="warningMessage">
+					<div class="blueText boldText">Proceed with caution:</div>
+					<div style="color: black">
+						<h4
+							th:text=' ${"Your item (id:"+id+") can be added at one time. 
+                        The overage must be approved by management."}'>
+						</h4>
+
+					</div>
+				</div>
+				<div class="spacer2"></div>
+				<div class="container1">
+					<div class="floatRight">
+						<input type="submit" value=" Proceed " id="Proceed"
+							class="blueButton" onclick="redirectToHome()">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- End to show LEFT and Right border -->
+		<!-- Below class to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<div class="popupcontentBlockbottom" style="background-color: white"></div>
+		<!-- End to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<!-- Code Ends Here-->
+	</div>
+	</body>
+	</html>
+	

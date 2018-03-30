@@ -1,0 +1,13 @@
+#overlaydiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.985;
+    -khtml-opacity: 0.985;
+    opacity: 0.985;
+    z-index: 10000;
+}

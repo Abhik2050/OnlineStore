@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi, user-scalable=no" />
+<title>OPUS MOBILE</title>
+
+<link rel="stylesheet" type="text/css" href="css/OM.css">
+
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/home.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="orangeText boldText padding10">Home Page: Product
+		Management</div>
+	<div class="headerBarblock">
+		<div class="floatLeft boldText">&minus;</div>
+		<div class="floatLeft paddingLeft10">Product Inventory</div>
+		<div class="clear"></div>
+	</div>
+	<!-- Below class to show LEFT and Right border -->
+	<div class="headercontentblock1">
+		<div class="container1">
+			
+			<div class="floatLeft selectWidth85 marginLeft20">
+				<div class="boldText">Enter information below</div>
+				<div class="spacer2"></div>
+				<div id ="error"></div>
+					<div class="floatLeft selectWidth25">
+					<input name="itemId" id="itemId" type="text"
+						class="inputboxBg selectWidth80" size="15" maxlength="15"
+						placeholder="">
+					<div class="padding10">*Item ID</div>
+				</div>
+				<div class="floatLeft selectWidth10">
+					<input name="qty" id="qty" type="text"
+						class="inputboxBg selectWidth45" size="15" maxlength="15"
+						placeholder="">
+					<div class="padding10">*Qty</div>
+				</div>
+			<div class="spacer2"></div>
+				<div class="floatLeft selectWidth35">
+					<input name="name" id="name" type="text"
+						class="inputboxBg selectWidth80" size="15" maxlength="15"
+						placeholder="">
+					<div class="padding10">*Item Name</div>
+				</div>
+				<div class="floatLeft selectWidth20">
+					<textarea rows="4" cols="20" id="description"
+						class="inputboxBg selectWidth80" 
+						placeholder=""></textarea>
+					<div class="padding10">*Item Description</div>
+				</div>
+				<!--  <div class="floatLeft selectWidth20">
+					<input name="itemtype" id="itemtype" type="text"
+						class="inputboxBg selectWidth80" size="15" maxlength="15"
+						placeholder="">
+					<div class="padding10">*Item Type</div>
+				</div>
+				<div class="floatLeft selectWidth25">
+				<input name="myFile" type="file">
+				</div> -->
+				<div class="floatLeft selectWidth15">
+					<input type="submit" id="Quick_Add" value="Quick Add"
+						class="greenButton">
+				</div>
+				<div class="clear"></div>
+				<div class="spacer2"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="sharpblueBar">Added Items</div>
+		<div class="container1">
+			<div id="getResultDiv"></div>
+
+			<div class="spacer2"></div>
+			<div class="instructionText"></div>
+			<div class="spacer2"></div>
+		</div>
+		<div class="omblueLine"></div>
+		<div class="container1">
+			<div class="blueText boldText"></div>
+			<div>Customer Care:</div>
+			<div class="spacer2"></div>
+			<div class="boldText">
+				AT&T Any City, USA<br> (555) 555-5555
+			</div>
+			<div class="spacer2"></div>
+			<div class="floatLeft selectWidth15">
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!-- End to show LEFT and Right border -->
+	<!-- Below class to show Bottom border with LEFT and RIGHT rounded corners. -->
+	<div class="headercontentblock0"></div>
+	<!-- End to show Bottom border with LEFT and RIGHT rounded corners. -->
+	<div class="spacer2"></div>
+</div>
+
+</body>
+
+</html>

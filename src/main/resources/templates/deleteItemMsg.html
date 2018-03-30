@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/OM.css}" />
+
+</head>
+<body>
+	<div class="container">
+		<div class="headerBarblock padding10">
+			Product Inventory
+			<div class="floatRight closeX"></div>
+			<div class="clear"></div>
+		</div>
+		<!-- Below class to show LEFT and Right border -->
+		<div class="popupcontentBlock" style="background-color: white">
+			<div>
+				<div class="container1">
+					<div class="available paddingTop5 floatLeft"></div>
+					<div class="boldText floatLeft selectWidth80 marginLeft20 blueText">
+					<h4
+							th:text=' ${"Your
+						Item(id : "+id+" ) has been successfully deleted"}'></h4></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="container1">
+				<div class="floatRight">
+					<input type="submit" value=" Close " class="blueButton"
+						onclick="redirectToHome()">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- End to show LEFT and Right border -->
+		<!-- Below class to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<div class="popupcontentBlockbottom" style="background-color: white"></div>
+		<!-- End to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<!-- Code Ends Here-->
+	</div>
+	<!-- Code Ends Here-->
+	<script type="text/javascript" src="/js/redirect.js"></script>

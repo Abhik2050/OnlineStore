@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/OM.css}" />
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script type="text/javascript" src="/js/redirect.js"></script>
+</head>
+<body>
+<div class="container">
+		<div class="headerBarblock padding10">
+			Product Update
+			<div class="floatRight closeX"></div>
+		</div>
+<div class="popupcontentBlock" style="background-color: white">
+<div class="container1"> 
+            	<div class="floatLeft scanner"></div>
+                <div class="floatLeft selectWidth85 marginLeft20">
+                	<div class="boldText"> 
+                	
+                	<h5 th:text=' ${"Enter the information below to update the product (id:"+id+") "}'></h5></div>
+                    <div class="spacer2"></div>
+                    <div id="error"></div>
+                     <form action="#" th:action="@{/updateItemForm}" th:object="${Products}" method="post" id="form">
+                                               <input type="hidden" name="id" id="id"  th:value='${id}' class="inputboxBg selectWidth80" size="15" maxlength="15" placeholder=""/>
+                     
+                    <div class="floatLeft selectWidth15">
+                   
+                        <input type="text" name="qty" id="qty" th:value='${oldProducts.qty}' class="inputboxBg selectWidth45" size="15" maxlength="15" placeholder=""/>
+                        <div class="padding10">*Qty</div>
+                    </div>
+				<div class="floatLeft selectWidth35">
+					<input name="name" id="name" th:value='${oldProducts.name}' type="text"
+						class="inputboxBg selectWidth80" size="15" maxlength="15"
+						placeholder="">
+					<div class="padding10">*Item Name</div>
+				</div>
+				<div class="floatLeft selectWidth20">
+					<input type="text" rows="4" cols="20" id="description" name="description" th:value='${oldProducts.description}'
+						class="inputboxBg selectWidth80" 
+						placeholder="">
+					<div class="padding10">*Item Description</div>
+				</div>
+                    <div class="floatLeft selectWidth15">
+                        <input type="submit"  id ="Quick_Update" value="Quick Update" class="greenButton">
+                    </div>                
+                    <div class="clear"></div>
+                    <div class="spacer2"></div>
+                    </form>
+                </div>
+                <div class="clear"></div>                                            	                
+            </div>
+            </div>
+            	<!-- End to show LEFT and Right border -->
+		<!-- Below class to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<div class="popupcontentBlockbottom" style="background-color: white"></div>
+		<!-- End to show Bottom border with LEFT and RIGHT rounded corners. -->
+		<!-- Code Ends Here-->
+		
+
+	</div>
+	</body>
+	</html>
